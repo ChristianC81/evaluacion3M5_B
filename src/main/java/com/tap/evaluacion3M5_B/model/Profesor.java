@@ -20,7 +20,7 @@ public class Profesor {
     @Id
     private Long prof_Id;
 
-    private List<Curso> listCursos;
+    private Depto depto;
 
     private String nombre;
 

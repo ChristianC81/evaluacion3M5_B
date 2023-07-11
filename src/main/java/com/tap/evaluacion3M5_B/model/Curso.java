@@ -4,6 +4,7 @@
  */
 package com.tap.evaluacion3M5_B.model;
 
+import java.util.List;
 import lombok.Data;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -12,19 +13,19 @@ import org.springframework.data.mongodb.core.mapping.Document;
  *
  * @author chris
  */
-@Document(collection="Curso")
+@Document(collection = "Curso")
 @Data
 public class Curso {
- 
+
     @Id
     private Long curso_Id;
-    
-    private Profesor prof_Id;
+
+    private List<Profesor> listProfesores;
 
     private String nombre;
-  
+
     private String nivel;
-    
+
     private String descripcion;
-    
-}   
+
+}

@@ -53,7 +53,7 @@ public class ProfesorController {
             try {
                 profesorEncontrado.setProf_Id(p.getProf_Id());
                 profesorEncontrado.setNombre(p.getNombre());
-                profesorEncontrado.setNombre(p.getNombre());
+                profesorEncontrado.setDepto(p.getDepto());
                 profesorEncontrado.setDireccion(p.getDireccion());
                 profesorEncontrado.setTelefono(p.getTelefono());
                 return new ResponseEntity<>(profesorService.save(p), HttpStatus.OK);

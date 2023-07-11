@@ -52,7 +52,7 @@ public class CursoController {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         } else {
             try {
-                cursoEncontrado.setProf_Id(p.getProf_Id());
+                
                 cursoEncontrado.setNombre(p.getNombre());
                 cursoEncontrado.setNivel(p.getNivel());
                 cursoEncontrado.setDescripcion(p.getDescripcion());
